@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    background-color: #109bd3;
+    width: 100%;
+    height: 9vh;
+
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    gap: 56px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.loginSign button {
+    border-style: none;
+    cursor: pointer;
+    font-size: 1rem;
+
+    border-radius: 5px;
+    width: 72px;
+    height: 25px;
+    color: blue;
+}
+
+.changeColorbutton button {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.changeBodyColor {
+    background-color: black;
+    color: #fff;
+
+}
+
+.first-body-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-around;
+    padding: 35px 0px;
+
+}
+
+.left-body-content {
+    width: 25%;
+    font-size: 1.5rem;
+
+}
+
+.left-body-content h2 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.left-body-content p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+.left-body-content button {
+    margin-top: 3rem;
+    width: 8rem;
+    height: 2rem;
+    color: #fff;
+    border-radius: 12px;
+    background: #474750;
+}
+
+.body-middle-content h2 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.body-middle-content p {
+    padding: 12px 0px;
+    font-size: 1.1rem;
+    width: 455px;
+    background: aliceblue;
+}
+
+.body-rounded-content {
+    width: 100%;
+    height: 70vh;
+    background: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.rounded-line {
+
+    margin-left: 374px;
+    width: 50%;
+    height: 100vh;
+    /* background: red; */
+    border-radius: 50%;
+    border: 3px dashed #87879d;
+}
+
+.middle-rounded-line {
+
+    width: 60%;
+    height: 34rem;
+    border: 1px dashed blue;
+    border-radius: 50%;
+    background: #cbd8e3;
+    margin-left: 158px;
+    margin-top: 96px;
+}
+
+.middleroundedimage:nth-child(1) {
+    position: relative;
+    left: 50px;
+    top: 86px;
+}
+
+.middleroundedimage:nth-child(2) {
+    position: relative;
+    top: -60px;
+    left: 27px;
+}
+
+.first-rounded-line {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(27, 17, 173);
+    text-align: center;
+
+}
+
+.first-rounded-line img {
+    position: relative;
+    top: 94px;
+    width: 40%;
+    object-fit: contain;
+}
+
+.first-rounded-line p {
+    position: relative;
+    top: 98px;
+}
+
+
+
+
+
+.second-rounded-line {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.second-rounded-line img {
+    position: relative;
+    top: 79px;
+    width: 40%;
+    object-fit: contain;
+    left: 71px;
+}
+
+.second-rounded-line p {
+    position: relative;
+    top: 98px;
+    left: 97px;
+}
+
+
+
+
+.third-rounded-line {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(126, 221, 134);
+}
+
+.third-rounded-line img {
+    position: relative;
+    top: 79px;
+    width: 40%;
+    object-fit: contain;
+    left: 71px;
+}
+
+.third-rounded-line p {
+    position: relative;
+    top: 98px;
+    left: 97px;
+}
+
+
+.four-rounded-line {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(216, 52, 121, 0.925);
+}
+
+.four-rounded-line img {
+    position: relative;
+    top: 79px;
+    width: 40%;
+    object-fit: contain;
+    left: 71px;
+}
+
+.four-rounded-line p {
+    position: relative;
+    top: 98px;
+    left: 97px;
+}
+
+
+.fifth-rounded-line {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(114, 216, 31);
+}
+
+.fifth-rounded-line img {
+    position: relative;
+    top: 79px;
+    width: 40%;
+    object-fit: contain;
+    left: 71px;
+}
+
+.fifth-rounded-line p {
+    position: relative;
+    top: 98px;
+    left: 97px;
+}
+
+.footer {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(153, 199, 240);
+}
+
+footer a {
+    font-size: 20px;
+    text-decoration: none;
+    color: red;
+
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 668px) {
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .left-body-content {
+        width: 100%;
+    }
+
+    .body-rounded-content {
+        display: flex;
+        flex-direction: column;
+        gap: 129px;
+        margin-top: 302px;
+    }
+
+    .first-rounded-line {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .second-rounded-line {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .third-rounded-line {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .four-rounded-line {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .first-rounded-line img {
+        position: relative;
+        top: 1px;
+        width: 40%;
+        object-fit: contain;
+        left: 3px;
+    }
+
+    .first-rounded-line p {
+        position: relative;
+        /* top: 69px; */
+        left: 3px;
+        bottom: 12px;
+    }
+
+    .second-rounded-line img {
+        position: relative;
+        top: 1px;
+        width: 40%;
+        object-fit: contain;
+        left: 3px;
+    }
+
+    .second-rounded-line p {
+        position: relative;
+        /* top: 69px; */
+        left: 3px;
+        bottom: 12px;
+    }
+
+    .third-rounded-line img {
+        position: relative;
+        top: 1px;
+        width: 40%;
+        object-fit: contain;
+        left: 3px;
+    }
+
+    .third-rounded-line p {
+        position: relative;
+        /* top: 69px; */
+        left: 3px;
+        bottom: 12px;
+    }
+
+    .four-rounded-line img {
+        position: relative;
+        top: 1px;
+        width: 40%;
+        object-fit: contain;
+        left: 3px;
+    }
+
+    .four-rounded-line p {
+        position: relative;
+        /* top: 69px; */
+        left: 3px;
+        bottom: 12px;
+    }
+
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="product.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h1 id="head">
+                Ecommerce Parasuite
+            </h1>
+            <uL>
+                <li>Home</li>
+                <li>Product</li>
+                <li>Services</li>
+                <li>About</li>
+
+            </uL>
+            <div class="loginSign">
+                <button>Login</button>
+                <button>Sign up</button>
+
+            </div>
+            <div class="changeColorbutton" id="btn">
+                <button onclick="changeThemeColor()"><i class="fa-solid fa-toggle-on" id="toggleicon"></i>
+                </button>
+            </div>
+
+        </nav>
+
+        <div class="mainBodyImage">
+
+
+            <div class="mainbodyImae">
+
+                <center>
+                    <span id="element"></span>
+                    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                </center>
+
+
+            </div>
+
+            <div class="imageCheck" id="para">
+                <div class="imageContain">
+
+                    <img src="./Image/bgimage.png" alt="">
+                    <p>description</p>
+                </div>
+                <div class="imageContain">
+
+                    <img src="./Image/bgimage.png" alt="">
+                    <p>description</p>
+                </div>
+                <div class="imageContain">
+
+                    <img src="./Image/bgimage.png" alt="">
+                    <p>description</p>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <script>
+
+        async function getData() {
+
+            const data = await fetch(`https://fakestoreapi.com/products`)
+            const newData = await data.json();
+            console.log(newData)
+
+            let allData = "";
+            newData.map((item) =>
+                allData += `  <div class="imageContain">
+
+              <img src="${item.image}"alt="">
+              <p>description</p>
+                  </div>`
+
+
+            )
+            document.getElementById("para").innerHTML = allData;
+
+
+        }
+        getData()
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="js.js"></script>
+
+</body>
+
+</html>
